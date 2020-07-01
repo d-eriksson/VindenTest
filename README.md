@@ -1,0 +1,3 @@
+Problemet: En kund vill veta ungefär hur mycket ett objekt kommer kosta att förvara hos Vinden och vill beräkna ett estimat.
+
+Lösningen: Jag har skapat en react-native app som låter en användare ange dimensioner och vikt samt typen av objekt. Beräkningarna är givetvis helt påhittade då jag inte vet exakt hur priserna beräknas. Det finns även möjlighet att ge tips till användaren för att reducera priset och effektivisera flytten av objekt. 
