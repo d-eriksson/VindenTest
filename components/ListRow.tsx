@@ -28,7 +28,7 @@ const ListRow = (props:Props) => {
                                 'Information',
                                 props.hint,
                                 [
-                                  { text: 'OK', onPress: () => console.log('OK Pressed') }
+                                  { text: 'OK'}
                                 ],
                                 { cancelable: false }
                               );

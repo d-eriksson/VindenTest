@@ -8,7 +8,6 @@ import {
 import {Button, Modal, Portal,Provider,Colors} from 'react-native-paper'
 import EstimationInput from './components/EstimationInput';
 import ListRow from './components/ListRow';
-import tailwind from 'tailwind-rn';
 
 
 declare const global: {HermesInternal: null | {}};
@@ -66,7 +65,7 @@ const App = () => {
   	return (
 		<Provider>
 			<Portal>	
-				<SafeAreaView style={tailwind('h-full')}>
+				<SafeAreaView >
 					<FlatList
 						data={list}
 	  					renderItem={({ item }) => 
@@ -80,7 +79,7 @@ const App = () => {
 						keyExtractor={(item) => item.id}
 					/>
 					<Text style={styles.titleText}>Total estimerad kostnad</Text>
-					<Text style={styles.titleText}>{total} kr</Text>
+					<Text style={styles.titleText}>{total.toFixed(2)} kr</Text>
 					
 					<Modal visible={modalVisible} onDismiss={ () => setModalVisible(false)}>
 						<EstimationInput
